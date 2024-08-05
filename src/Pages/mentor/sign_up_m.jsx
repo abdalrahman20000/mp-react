@@ -91,7 +91,7 @@ const SignUpPage_m = () => {
                     <div className="bg-white p-8 rounded-lg text-center">
                         <p className="text-[#000080] text-xl mb-4">Your data has been uploaded and is being reviewed. Once completed, you will be contacted.</p>
                         <button
-                            onClick={() => {setShowConfirmation(false),navigate("/");}}
+                            onClick={() => {setShowConfirmation(false),navigate("/mp-react/");}}
                             className="bg-[#ffa700] text-[#000080] py-2 px-4 rounded-md hover:bg-yellow-600 transition duration-300"
                         >
                             Done

@@ -17,7 +17,7 @@ const SignInPage_m = () => {
                         <label htmlFor="password" className="block text-sm font-medium text-dark-blue">Password</label>
                         <input type="password" id="password" name="password" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-dark-blue  focus:ring-opacity-50 focus:outline-none focus:ring-2 focus:ring-dark-blue p-1 text-dark-yellow-hover" />
                     </div>
-                    <Link to="/l">
+                    <Link to="/m">
                         <button type="submit" className="w-full mt-3 bg-white text-dark-blue py-2 px-4 rounded-md hover:bg-indigo-100 transition duration-300">Log in</button>
 
                     </Link>

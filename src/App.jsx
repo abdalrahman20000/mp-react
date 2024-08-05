@@ -46,14 +46,14 @@ function App() {
   return (
     <div className='overflow-hidden'>
       <BrowserRouter>
-        {/* <Header_l></Header_l> */}
-        <Header_m></Header_m>
+        <Header_l></Header_l>
+        {/* <Header_m></Header_m> */}
         <Routes>
-          <Route path="/s-register" element={<RegisterSelection></RegisterSelection>}></Route>
+          <Route path="/mp-react/s-register" element={<RegisterSelection></RegisterSelection>}></Route>
 
 
           {/* <Route path="/" element={<SubPage></SubPage>}></Route> */}
-          <Route path="/" element={<HomePage></HomePage>}></Route>
+          <Route path="/mp-react/" element={<HomePage></HomePage>}></Route>
           <Route path="/l" element={<L_Home></L_Home>}></Route>
           <Route path="/sessions" element={<Sessions></Sessions>}></Route>
           <Route path="/call-sesstion" element={<Session_call></Session_call>}></Route>
@@ -79,8 +79,8 @@ function App() {
           <Route path="/log-in-m" element={<SignInPage_m></SignInPage_m>}></Route>
 
         </Routes>
-        {/* <Footer_l></Footer_l> */}
-        <Footer_m></Footer_m>
+        <Footer_l></Footer_l>
+        {/* <Footer_m></Footer_m> */}
       </BrowserRouter>
 
 
