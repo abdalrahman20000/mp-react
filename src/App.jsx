@@ -81,6 +81,7 @@ function App() {
         </Routes>
         <Footer_l></Footer_l>
         {/* <Footer_m></Footer_m> */}
+        {/* <Footer_m></Footer_m> */}
       </BrowserRouter>
 
 
