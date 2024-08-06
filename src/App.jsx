@@ -5,6 +5,7 @@ import Header_l from './Components/header_'
 import Footer_l from './Components/footer_'
 import Header_m from './Components/header_m'
 import Footer_m from './Components/footer_m'
+import Main_header from './Components/main_header'
 import SignInPage_l from './Pages/learner/log_in_l'
 import SignUpPage_l from './Pages/learner/sign_up_l'
 import SignInPage_m from './Pages/mentor/log_in_m'
@@ -48,6 +49,7 @@ function App() {
       <BrowserRouter>
         <Header_l></Header_l>
         {/* <Header_m></Header_m> */}
+        <Main_header></Main_header>
         <Routes>
           <Route path="/mp-react/s-register" element={<RegisterSelection></RegisterSelection>}></Route>
 

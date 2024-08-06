@@ -31,15 +31,15 @@ function Session_call() {
                             </div>
                         </header> */}
 
-                        <div className=" flex-col items-center justify-between bg-blue-800 p-4 rounded-lg mb-4 h-[100%]">
+                        <div className=" flex-col items-center justify-between bg-white p-4 rounded-lg mb-4 h-[100%]">
                             <div className="h-[75%] flex justify-center items-center">
                                 <div className="w-40 h-40 sm:w-20 sm:h-20 bg-dark-yellow-hover rounded-full mx-auto "></div>
                             </div>
 
                             <div className="flex justify-center items-end pb-5 space-x-4 h-[25%] ">
-                                <Camera className="w-5 h-5 sm:w-6 sm:h-6" />
-                                <Mic className="w-5 h-5 sm:w-6 sm:h-6" />
-                                <PhoneOff onClick={() => { cancel_call_handle() }} className="w-5 h-5 sm:w-6 sm:h-6" />
+                                <Camera className="w-5 h-5 sm:w-6 sm:h-6 text-dark-yellow-hover" />
+                                <Mic className="w-5 h-5 sm:w-6 sm:h-6 text-dark-yellow-hover" />
+                                <PhoneOff onClick={() => { cancel_call_handle() }} className="w-5 h-5 sm:w-6 sm:h-6 text-dark-yellow-hover" />
                             </div>
                         </div>
 

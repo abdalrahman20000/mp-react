@@ -64,6 +64,7 @@ const Header_m = () => {
                 <Link to="/settings" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Profile</Link>
                 <Link to="/dcv" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">DCV</Link>
                 <Link to="/settings" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Settings</Link>
+                <Link to="/mp-react/" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Log out</Link>
               </div>
             )}
           </div>

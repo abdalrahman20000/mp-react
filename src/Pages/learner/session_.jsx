@@ -38,7 +38,7 @@ const MentorshipDashboard = () => {
                     {/* Left column */}
                     <div className="w-full lg:w-2/3 space-y-4">
                         {/* Search bar */}
-                        <div className="bg-dark-blue rounded-lg p-2 flex items-center">
+                        <div className="bg-dark-blue rounded-xl p-2 flex items-center">
                             <input
                                 type="text"
                                 placeholder="Search here ..."
@@ -50,11 +50,11 @@ const MentorshipDashboard = () => {
                         </div>
 
                         {/* Available sessions */}
-                        <div className="bg-dark-blue rounded-lg p-4">
+                        <div className="bg-dark-blue rounded-xl p-4">
                             <h2 className="text-white font-bold mb-4 ">Sessions available now</h2>
                             <div className="space-y-4">
                                 {mentors.map((mentor, index) => (
-                                    <div key={index} onClick={() => { confirm_call_handle() }} className="bg-white rounded-lg p-4 flex items-start space-x-4">
+                                    <div key={index} onClick={() => { confirm_call_handle() }} className="bg-white rounded-xl p-4 flex items-start space-x-4">
                                         <div className="text-center"><User className="text-dark-blue" size={48} /></div>
                                         <div>
                                             <div className="flex justify-start items-center ">
@@ -79,11 +79,11 @@ const MentorshipDashboard = () => {
                     {/* Right column */}
                     <div className="w-full lg:w-1/3 space-y-4">
                         {/* Favorite Mentors */}
-                        <div className="bg-dark-blue rounded-lg p-4">
+                        <div className="bg-dark-blue rounded-xl p-4">
                             <h2 className="text-white font-bold mb-4">Favorite Mentors</h2>
                             <div className="space-y-2">
                                 {favoriteMentors.map((mentor, index) => (
-                                    <div key={index} onClick={() => { confirm_call_handle() }} className="bg-white rounded-lg p-2 flex items-center justify-between">
+                                    <div key={index} onClick={() => { confirm_call_handle() }} className="bg-white rounded-xl p-2 flex items-center justify-between">
                                         <div className="flex items-center space-x-2">
                                             <User className="text-dark-blue" size={24} />
                                             <div>
@@ -105,11 +105,11 @@ const MentorshipDashboard = () => {
                         </div>
 
                         {/* Reserved Sessions */}
-                        <div className="bg-dark-blue rounded-lg p-4">
+                        <div className="bg-dark-blue rounded-xl p-4">
                             <h2 className="text-white font-bold mb-4">Reserved Sessions</h2>
                             <div className="space-y-2">
                                 {reservedSessions.map((session, index) => (
-                                    <div key={index} onClick={() => { confirm_call_handle() }} className="bg-white rounded-lg p-2 flex items-center justify-between">
+                                    <div key={index} onClick={() => { confirm_call_handle() }} className="bg-white rounded-xl p-2 flex items-center justify-between">
                                         <div className="flex items-center space-x-2">
                                             <User className="text-dark-blue" size={24} />
                                             <div>

@@ -7,3 +7,22 @@
     box-sizing: border-box;
     font-family: "K2D", sans-serif;
 }
+
+/* 
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
+
+
+#hero {
+    background-image: url("./images/bg-v.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+} */

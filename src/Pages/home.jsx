@@ -1,31 +1,44 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { ArrowRight, Moon, Phone, Apple, PlayCircle } from 'lucide-react';
+import bg_v from "../images/bg-v.mp4";
 
 import logo from "../images/logo.png";
 
 const Header = () => (
-    <header className="bg-dark-blue p-4 flex justify-between items-center">
-        <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-            <div className="flex items-center space-x-2  rounded-full ">
-                <Link to="/"><img src={logo} alt="Logo" className="w-10 h-10 bg-white p-[2px] rounded-full" /></Link>
+    <>
+        {/* <header className="bg-dark-blue p-4 flex justify-between items-center">
+            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                <div className="flex items-center space-x-2  rounded-full ">
+                    <Link to="/"><img src={logo} alt="Logo" className="w-10 h-10 bg-white p-[2px] rounded-full" /></Link>
+                </div>
             </div>
-        </div>
-        <div>
-            <Link to="s-register"><button className="bg-dark-yellow-hover text-dark-blue px-4 py-2 rounded mr-2 hover:bg-opacity-90">Sign In</button></Link>
-            <Link to="s-register"><button className="bg-white text-dark-blue px-4 py-2 rounded hover:bg-opacity-90">Sign Up</button></Link>
-        </div>
-    </header>
+            <div>
+                <Link to="s-register"><button className="bg-dark-yellow-hover text-dark-blue px-4 py-2 rounded mr-2 hover:bg-opacity-90">Sign In</button></Link>
+                <Link to="s-register"><button className="bg-white text-dark-blue px-4 py-2 rounded hover:bg-opacity-90">Sign Up</button></Link>
+            </div>
+        </header> */}
+    </>
 );
 
 const Hero = () => (
-    <div className="relative bg-blue-800 text-white py-20 px-4 text-center">
+    <div id='hero' className="relative flex justify-center items-center  text-white h-screen">
+        <video
+            autoPlay
+            muted
+            loop
+            id="myVideo"
+            className='absolute top-0 left-0 w-full h-full object-cover'
+        >
+            <source src={bg_v} type="video/mp4" />
+        </video>
+        {/* <div className="absolute inset-0 bg-blue-800 opacity-50"></div> */}
         <div className="absolute inset-0 overflow-hidden">
             <Moon className="absolute top-10 right-10 text-dark-yellow-hover w-20 h-20" />
         </div>
-        <div className="relative z-10">
+        <div className="relative z-10 text-center px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Interactive programming classes with expert mentors.</h1>
-            <Link to="/s-register">
+            <Link to="/mp-react/s-register">
                 <button className="bg-dark-yellow-hover mt-10 text-dark-blue px-6 py-3 rounded-full text-lg flex items-center mx-auto hover:bg-opacity-90">
                     Get Started <ArrowRight className="ml-2" />
                 </button>
@@ -35,7 +48,7 @@ const Hero = () => (
 );
 
 const Subscriptions = () => (
-    <div className="bg-white py-10 px-4">
+    <div className="bg-white py-10 px-4 pb-15">
         <h2 className="text-dark-blue text-3xl font-bold text-center mb-6">Subscriptions</h2>
         <div className="flex flex-wrap justify-between  w-full">
             {['ESSENTIAL', 'EXTRA', 'PREMIUM'].map((plan) => (
@@ -46,23 +59,27 @@ const Subscriptions = () => (
                 </div>
             ))}
         </div>
+        {/* <div className="flex justify-center items-center">
+            <div className="w-[80%] bg-dark-blue h-1 rounded-sm mt-5"></div>
+        </div> */}
     </div>
 );
 
 const Experience = () => (
-    <div className="bg-dark-yellow-hover py-10 px-4 flex flex-wrap items-center justify-between">
+    <div className="bg-dark-blue py-10 px-56 flex flex-wrap items-center justify-center">
         <div className="w-full md:w-2/3 mb-4 md:mb-0">
-            <h2 className="text-3xl font-bold text-dark-blue mb-2">Get the experience</h2>
-            <p className="text-dark-blue mb-4">that qualifies you for the job market.</p>
+            <h2 className="text-3xl font-bold text-white mb-2">Get the experience</h2>
+            <p className="text-white mb-4">that qualifies you for the job market.</p>
             <Link to="/s-register">
-                <button className="bg-dark-blue text-white px-6 py-3 rounded-full flex items-center hover:bg-opacity-90">
+                <button className="bg-dark-yellow-hover text-white px-6 py-3 rounded-full flex items-center hover:bg-opacity-90">
                     subscribe now <ArrowRight className="ml-2" />
                 </button>
             </Link>
         </div>
-        <div className="w-full md:w-1/3 flex justify-center">
-            <Phone className="text-dark-blue w-32 h-32" />
+        <div className="w-full md:w-1/3 flex justify-end">
+            <Phone className="text-white w-32 h-32" />
         </div>
+
     </div>
 );
 
@@ -82,11 +99,13 @@ const MobileApp = () => (
         <div className="w-full md:w-1/2 flex justify-center">
             <Phone className="text-white w-32 h-32" />
         </div>
+
+
     </div>
 );
 
 const Features = () => (
-    <div className="bg-white py-10 px-4">
+    <div className="bg-white py-5 px-4">
         <h2 className="text-3xl font-bold text-dark-blue text-center mb-6">Our Features</h2>
         <div className="flex flex-wrap justify-center gap-6">
             {['Live Coding Sessions', 'Expert Mentorship', 'Project-Based Learning'].map((feature) => (
@@ -96,20 +115,26 @@ const Features = () => (
                 </div>
             ))}
         </div>
+
+        <div className="flex justify-center items-center">
+            <div className="w-[80%] bg-dark-blue h-1 rounded-sm mt-5"></div>
+        </div>
     </div>
 );
 
 const Testimonials = () => (
-    <div className="bg-dark-yellow-hover py-10 px-4">
+    <div className="bg-white py-5 px-4">
         <h2 className="text-3xl font-bold text-dark-blue text-center mb-6">What Our Students Say</h2>
         <div className="flex flex-wrap justify-center gap-6">
             {[1, 2, 3].map((i) => (
-                <div key={i} className="bg-white p-6 rounded-lg shadow-md w-full sm:w-80">
-                    <p className="text-dark-blue mb-4">"This program has been transformative for my career. The mentors are exceptional!"</p>
-                    <p className="font-bold text-dark-blue">- Student {i}</p>
+                <div key={i} className="bg-dark-blue p-6 rounded-lg shadow-md w-full sm:w-80">
+                    <p className="text-white mb-4">"This program has been transformative for my career. The mentors are exceptional!"</p>
+                    <p className="font-bold text-dark-yellow-hover">- Student {i}</p>
                 </div>
             ))}
         </div>
+
+
     </div>
 );
 

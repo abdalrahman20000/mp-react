@@ -13,6 +13,7 @@ const ConfirmInformation = () => {
 
   function call_handle(){
     navigate("/call-sesstion");
+    // navigate("/call-sesstion");
   }
 
 
@@ -22,7 +23,7 @@ const ConfirmInformation = () => {
         <div className="grid md:grid-cols-2">
           <div className="p-6 space-y-4">
             <h2 className="text-2xl font-bold mb-6">Confirm information</h2>
-            {['User name', 'User name', 'User name', 'User name'].map((label, index) => (
+            {['User name', 'Mentor name', 'Topic', 'Date'].map((label, index) => (
               <div key={index} className="space-y-1">
                 <label className="text-sm text-white">{label}</label>
                 <input 
