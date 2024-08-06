@@ -55,6 +55,7 @@ function App() {
 
 
           {/* <Route path="/" element={<SubPage></SubPage>}></Route> */}
+          {/* <Route path="/mp-react/" element={<HomePage></HomePage>}></Route> */}
           <Route path="/mp-react/" element={<HomePage></HomePage>}></Route>
           <Route path="/l" element={<L_Home></L_Home>}></Route>
           <Route path="/sessions" element={<Sessions></Sessions>}></Route>
